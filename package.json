@@ -1,0 +1,16 @@
+{
+  "name": "cdef",
+  "version": "1.0.0",
+  "description": "编程猫CoCo编辑器 自定义控件类型定义",
+  "main": "",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liulyxandy-codemao/cdef.git"
+  },
+  "homepage": "https://github.com/liulyxandy-codemao/cdef",
+  "scripts": {},
+  "keywords": [],
+  "author": "刘lyxAndy",
+  "license": "AGPL-3.0-only"
+}
