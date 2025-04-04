@@ -1,6 +1,6 @@
 {
   "name": "cdef",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "编程猫CoCo编辑器 自定义控件类型定义",
   "main": "",
   "types": "index.d.ts",
