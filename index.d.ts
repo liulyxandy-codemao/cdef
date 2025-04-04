@@ -31,3 +31,64 @@ declare class VisibleWidget extends InvisibleWidget {
 
     render(): any;
 }
+
+interface IDropdownOption {
+    label: string;
+    value: string;
+}
+
+interface IPropertyType {
+    key: string;
+    label: string;
+    valueType: string;
+    editorType?: string;
+    defaultValue: any;
+    dropdown?: IDropdownOption[];
+    blockOptions?: {
+        [x: string]: any;
+    };
+    [x: string]: any;
+}
+
+interface IParamType {
+    key: string;
+    label: string;
+    valueType: string;
+    defaultValue: any;
+}
+
+type IEventParamType = Omit<IParamType, 'defaultValue'>;
+
+interface IMethodType {
+    key: string;
+    label: string;
+    valueType?: string;
+    params: IParamType[];
+    blockOptions?: {
+        [x: string]: any;
+    };
+    [x: string]: any;
+}
+
+interface IEventType {
+    key: string;
+    label: string;
+    params: IEventParamType[];
+    blockOptions?: {
+        [x: string]: any;
+    };
+    [x: string]: any;
+}
+
+
+interface IWidgetType {
+    type: string;
+    icon: string;
+    title: string;
+    isInvisibleWidget: boolean;
+    isGlobalWidget: boolean;
+    properties: IPropertyType[];
+    methods: IMethodType[];
+    events: IEventType[];
+    [x: string]: any;
+}
